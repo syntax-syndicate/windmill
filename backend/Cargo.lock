@@ -567,12 +567,12 @@ dependencies = [
 
 [[package]]
 name = "async-compression"
-version = "0.4.18"
+version = "0.4.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "df895a515f70646414f4b45c0b79082783b80552b373a68283012928df56f522"
+checksum = "06575e6a9673580f52661c92107baabffbf41e2141373441cbcdc47cb733003c"
 dependencies = [
  "brotli 7.0.0",
- "bzip2",
+ "bzip2 0.5.1",
  "flate2",
  "futures-core",
  "futures-io",
@@ -828,7 +828,7 @@ dependencies = [
  "percent-encoding",
  "pin-project-lite",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -1649,6 +1649,15 @@ checksum = "bdb116a6ef3f6c3698828873ad02c3014b3c85cadb88496095628e3ef1e347f8"
 dependencies = [
  "bzip2-sys",
  "libc",
+]
+
+[[package]]
+name = "bzip2"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "75b89e7c29231c673a61a46e722602bcd138298f6b9e81e71119693534585f5c"
+dependencies = [
+ "bzip2-sys",
 ]
 
 [[package]]
@@ -2537,7 +2546,7 @@ dependencies = [
  "async-compression",
  "async-trait",
  "bytes",
- "bzip2",
+ "bzip2 0.4.4",
  "chrono",
  "dashmap",
  "datafusion-common",
@@ -2572,7 +2581,7 @@ dependencies = [
  "tokio",
  "tokio-util",
  "url",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "xz2",
  "zstd",
 ]
@@ -2672,7 +2681,7 @@ dependencies = [
  "regex",
  "sha2 0.10.8",
  "unicode-segmentation",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -2839,7 +2848,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef552e6f588e446098f6ba40d89ac146c8c7b64aade83c051ee00bb5d2bc18d"
 dependencies = [
  "serde",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -2895,7 +2904,7 @@ dependencies = [
  "deno_error",
  "thiserror 2.0.11",
  "tokio",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -3090,7 +3099,7 @@ dependencies = [
  "spki",
  "thiserror 2.0.11",
  "tokio",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "x25519-dalek",
 ]
 
@@ -3265,7 +3274,7 @@ dependencies = [
  "pin-project",
  "rand 0.8.5",
  "tokio",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "winapi",
  "windows-sys 0.59.0",
 ]
@@ -3712,7 +3721,7 @@ dependencies = [
  "tokio",
  "tokio-metrics",
  "twox-hash 1.6.3",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "which 6.0.3",
  "winapi",
  "windows-sys 0.59.0",
@@ -3832,7 +3841,7 @@ dependencies = [
  "serde",
  "thiserror 2.0.11",
  "tokio",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -3921,7 +3930,7 @@ dependencies = [
  "num-bigint",
  "prost",
  "serde",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -3947,7 +3956,7 @@ dependencies = [
  "tokio",
  "tokio-util",
  "url",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -3971,7 +3980,7 @@ dependencies = [
  "thiserror 2.0.11",
  "tokio",
  "tokio-stream",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "v8_valueserializer",
 ]
 
@@ -7163,7 +7172,7 @@ dependencies = [
  "smallvec",
  "tagptr",
  "thiserror 1.0.69",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -7300,7 +7309,7 @@ dependencies = [
  "sha2 0.10.8",
  "subprocess",
  "thiserror 1.0.69",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "zstd",
 ]
 
@@ -8526,7 +8535,7 @@ dependencies = [
  "postgres-protocol 0.6.8",
  "serde",
  "serde_json",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -9484,7 +9493,7 @@ dependencies = [
  "rkyv_derive",
  "seahash",
  "tinyvec",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -9951,7 +9960,7 @@ dependencies = [
  "serde",
  "thiserror 1.0.69",
  "url",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -9989,7 +9998,7 @@ dependencies = [
  "schemars_derive",
  "serde",
  "serde_json",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -10831,7 +10840,7 @@ dependencies = [
  "tokio-stream",
  "tracing",
  "url",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "webpki-roots",
 ]
 
@@ -10915,7 +10924,7 @@ dependencies = [
  "stringprep",
  "thiserror 2.0.11",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "whoami",
 ]
 
@@ -10956,7 +10965,7 @@ dependencies = [
  "stringprep",
  "thiserror 2.0.11",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "whoami",
 ]
 
@@ -10982,7 +10991,7 @@ dependencies = [
  "sqlx-core",
  "tracing",
  "url",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -11657,7 +11666,7 @@ dependencies = [
  "tempfile",
  "thiserror 1.0.69",
  "time",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "winapi",
 ]
 
@@ -11887,7 +11896,7 @@ dependencies = [
  "tokio-rustls 0.24.1",
  "tokio-util",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
@@ -12749,7 +12758,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ab82fc73182c29b02e2926a6df32f2241dbadb5cfc111fd595515b3598f46bb3"
 dependencies = [
  "rand 0.9.0",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "web-time",
 ]
 
@@ -13041,9 +13050,9 @@ dependencies = [
 
 [[package]]
 name = "uuid"
-version = "1.15.0"
+version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bd8dcafa1ca14750d8d7a05aa05988c17aab20886e1f3ae33a40223c58d92ef7"
+checksum = "e0f540e3240398cce6128b64ba83fdbdd86129c16a3aa1a3a252efd66eb3d587"
 dependencies = [
  "getrandom 0.3.1",
  "serde",
@@ -13491,7 +13500,7 @@ checksum = "712e227841d057c1ee1cd2fb22fa7e5a5461ae8e48fa2ca79ec42cfc1931183f"
 
 [[package]]
 name = "windmill"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "axum",
@@ -13520,7 +13529,7 @@ dependencies = [
  "tokio",
  "tracing",
  "url",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "v8",
  "windmill-api",
  "windmill-api-client",
@@ -13534,7 +13543,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-api"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "argon2",
@@ -13617,7 +13626,7 @@ dependencies = [
  "ulid",
  "url",
  "urlencoding",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-audit",
  "windmill-common",
  "windmill-git-sync",
@@ -13630,7 +13639,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-api-client"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "base64 0.22.1",
  "chrono",
@@ -13643,12 +13652,12 @@ dependencies = [
  "serde",
  "serde_json",
  "syn 1.0.109",
- "uuid 1.15.0",
+ "uuid 1.15.1",
 ]
 
 [[package]]
 name = "windmill-audit"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "chrono",
  "serde",
@@ -13661,21 +13670,21 @@ dependencies = [
 
 [[package]]
 name = "windmill-autoscaling"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "serde",
  "serde_json",
  "sqlx",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-common",
  "windmill-queue",
 ]
 
 [[package]]
 name = "windmill-common"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "async-stream",
@@ -13730,27 +13739,27 @@ dependencies = [
  "tracing-loki",
  "tracing-opentelemetry",
  "tracing-subscriber",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-macros",
 ]
 
 [[package]]
 name = "windmill-git-sync"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "regex",
  "serde",
  "serde_json",
  "sqlx",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-common",
  "windmill-queue",
 ]
 
 [[package]]
 name = "windmill-indexer"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "bytes",
@@ -13767,13 +13776,13 @@ dependencies = [
  "tokio",
  "tokio-tar",
  "tracing",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-common",
 ]
 
 [[package]]
 name = "windmill-macros"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "itertools 0.14.0",
  "lazy_static",
@@ -13785,7 +13794,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "convert_case 0.6.0",
  "serde",
@@ -13794,7 +13803,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-bash"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "lazy_static",
@@ -13806,7 +13815,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-csharp"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "serde_json",
@@ -13818,7 +13827,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-go"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "gosyn",
@@ -13830,7 +13839,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-graphql"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "lazy_static",
@@ -13842,7 +13851,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-php"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "itertools 0.14.0",
@@ -13853,7 +13862,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-py"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "itertools 0.14.0",
@@ -13864,7 +13873,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-py-imports"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "async-recursion",
@@ -13884,7 +13893,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-rust"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "convert_case 0.6.0",
@@ -13901,7 +13910,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-sql"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "lazy_static",
@@ -13913,7 +13922,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-ts"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "lazy_static",
@@ -13931,7 +13940,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-wasm"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "getrandom 0.2.15",
@@ -13953,7 +13962,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-parser-yaml"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "serde_json",
@@ -13963,7 +13972,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-queue"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "async-recursion",
@@ -13989,14 +13998,14 @@ dependencies = [
  "tokio",
  "tracing",
  "ulid",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-audit",
  "windmill-common",
 ]
 
 [[package]]
 name = "windmill-sql-datatype-parser-wasm"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "wasm-bindgen",
  "wasm-bindgen-test",
@@ -14006,7 +14015,7 @@ dependencies = [
 
 [[package]]
 name = "windmill-worker"
-version = "1.472.1"
+version = "1.473.0"
 dependencies = [
  "anyhow",
  "async-recursion",
@@ -14067,7 +14076,7 @@ dependencies = [
  "tokio-util",
  "tracing",
  "urlencoding",
- "uuid 1.15.0",
+ "uuid 1.15.1",
  "windmill-audit",
  "windmill-common",
  "windmill-git-sync",
